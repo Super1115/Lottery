@@ -1,0 +1,29 @@
+<head>
+    <title>Pay via credit card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./cleave.js"></script>
+</head>
+<body>
+    
+<div class="frame">
+    <h1>Pay Via Credit Card</h1>
+    <h3 class="total">Subtotal: $100</h3>
+    <hr>
+    <form action="../index.html">
+        <input type="text" id="ccn" class="ccn" placeholder="Credit Card Number" name="ccn" required>
+        <input type="text" id="name" class="name" placeholder="Name" name="name" required>
+        <input type="text" class="ExpiryDate" id="ExpiryDate" name="ExpiryDate" placeholder="mm/yy" required>
+        <input type="text" name="cvv" id="cvv" class="cvv" placeholder="CVV" required> 
+        <button type="submit" class="pay">1-tap-Pay</button>
+    </form>
+</div>
+<script>
+    var cleave = new Cleave('.ccn', {
+        creditCard: true,
+    })
+    new Cleave('.ExpiryDate', {
+    date: true,
+    datePattern: ['m', 'y']
+});        
+</script>
+</body>

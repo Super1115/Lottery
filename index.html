@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="random_prize.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function pdf(){
+            location.href = "/pdf"
+}
+    </script>
+    <script>
+    window.onload = function() {
+        Particles.init({
+          selector: '.background',
+          maxParticles: 150,
+          connectParticles: true,
+        });
+      }; 
+      </script>
+</head>
+<body>
+    <canvas class="background"></canvas>
+    <script src="./particles.js"></script>
+    <div class="box"><button class="start" onclick="pdf()">抽獎</button></div>
+</body>
+</html>

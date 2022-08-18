@@ -1,0 +1,93 @@
+/* frame */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* frame */
+
+body{
+    background-color: lightblue;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+.frame{
+    width: 70vh;
+    height: 90vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 30px 45px -22px #888787; 
+    box-shadow: 0px 30px 45px -22px #888787;
+    align-items: center;
+}
+.ccn{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 90%;
+    background-color: rgb(247, 247, 247);
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.name{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 90%;
+    background-color: rgb(247, 247, 247);
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.ExpiryDate{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 50%;
+    background-color: rgb(247, 247, 247);
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.cvv{
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding: 1vh;
+    margin-bottom: 4vh;
+    outline: none;
+    width: 30%;
+    background-color: rgb(247, 247, 247);
+    font-size: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 3%;
+}
+.total{
+    font-family: 'Ubuntu', sans-serif;
+    font: bold;
+    font-size: large;
+}
+.pay{
+    border-style: solid;
+    border-color: #bbbaba;
+    background-color: transparent;
+    padding: 1vh;
+    font-size: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 50vh;
+    cursor: pointer;
+    margin-top: 30vh;
+}
+.pay:hover{
+    background-color: rgb(226, 226, 226);
+}
